@@ -1,6 +1,6 @@
 package Lingua::DE::Tagger;
 
-our $VERSION = '0.14';
+our $VERSION = '0.15';
 
 use warnings;
 use strict;
@@ -69,13 +69,13 @@ memoize('stem',
 
 =head1 NAME
 
-Lingua::EN::Tagger - Part-of-speech tagger for English natural language processing.
+Lingua::DE::Tagger - Part-of-speech tagger for German natural language processing.
 
 
 =head1 SYNOPSIS
 
     # Create a parser object
-    my $p = new Lingua::EN::Tagger;
+    my $p = new Lingua::DE::Tagger;
 
     # Add part of speech tags to a text
     my $tagged_text = $p->add_tags( $text );
@@ -94,7 +94,7 @@ Lingua::EN::Tagger - Part-of-speech tagger for English natural language processi
 =head1 DESCRIPTION
 
 The module is a probability based, corpus-trained tagger that assigns POS tags to 
-English text based on a lookup dictionary and a set of probability values.  The tagger
+German text based on a lookup dictionary and a set of probability values.  The tagger
 assigns appropriate tags based on conditional probabilities - it examines the
 preceding tag to determine the appropriate tag for the current word. 
 Unknown words are classified according to word morphology or can be set to
@@ -989,10 +989,11 @@ __END__
 
 =head1 AUTHORS
 
-    Aaron Coburn <acoburn@middlebury.edu>
+    Tobias Schulz <t-schulz@tobias-schulz.info>
 
 =head1 CONTRIBUTORS
 
+    Aaron Coburn <acoburn@middlebury.edu>
     Maciej Ceglowski <developer@ceglowski.com>
     Eric Nichols, Nara Institute of Science and Technology
 
